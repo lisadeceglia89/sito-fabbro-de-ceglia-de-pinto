@@ -1,0 +1,27 @@
+[
+  {
+    "slug": "infissi",
+    "label": "Infissi e Serramenti",
+    "description": "Finestre, portefinestre e persiane in alluminio e PVC"
+  },
+  {
+    "slug": "portoncini",
+    "label": "Portoncini e Porte Blindate",
+    "description": "Ingressi sicuri e su misura per la tua casa"
+  },
+  {
+    "slug": "cancelli",
+    "label": "Cancelli e Cancelli Carrai",
+    "description": "Ferro battuto e alluminio, classico o moderno"
+  },
+  {
+    "slug": "ringhiere",
+    "label": "Ringhiere e Recinzioni",
+    "description": "Balaustre, inferriate e recinzioni di design"
+  },
+  {
+    "slug": "verande",
+    "label": "Verande e Chiusure",
+    "description": "Verande e chiusure panoramiche in alluminio"
+  }
+]

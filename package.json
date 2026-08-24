@@ -1,0 +1,15 @@
+{
+  "name": "fabbro-serramenti-de-ceglia-de-pinto",
+  "version": "2.0.0",
+  "description": "Sito vetrina statico per Fabbro e Serramenti De Ceglia - De Pinto, con pannello foto gestito tramite Decap CMS + GitHub (100% gratuito).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

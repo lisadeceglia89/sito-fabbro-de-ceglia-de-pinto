@@ -1,0 +1,48 @@
+# =========================================================================
+# Configurazione del pannello di gestione foto (Decap CMS)
+#
+# IMPORTANTE: prima di pubblicare il sito, sostituisci "TUO-UTENTE/TUO-REPO"
+# qui sotto con il nome utente GitHub e il nome del repository dove hai
+# caricato questo progetto (es. "mariorossi/sito-fabbro").
+# Le istruzioni complete sono nel file README.md.
+# =========================================================================
+
+backend:
+  name: github
+  repo: TUO-UTENTE/TUO-REPO
+  branch: main
+
+# Dove Decap CMS salva le foto caricate e come il sito le richiama
+media_folder: "public/img/gallery"
+public_folder: "/img/gallery"
+
+# Non serve un editor "bozze": ogni modifica viene pubblicata subito
+publish_mode: simple
+
+locale: "it"
+
+collections:
+  - name: "gallery"
+    label: "Galleria foto"
+    files:
+      - name: "gallery"
+        label: "Foto della galleria"
+        file: "public/data/gallery.json"
+        fields:
+          - label: "Foto"
+            name: "items"
+            widget: "list"
+            label_singular: "Foto"
+            summary: "{{fields.title}} — {{fields.category}}"
+            fields:
+              - {label: "Descrizione", name: "title", widget: "string", hint: "Es. 'Cancello in ferro battuto su misura'"}
+              - label: "Categoria"
+                name: "category"
+                widget: "select"
+                options:
+                  - {label: "Infissi e Serramenti", value: "infissi"}
+                  - {label: "Portoncini e Porte Blindate", value: "portoncini"}
+                  - {label: "Cancelli e Cancelli Carrai", value: "cancelli"}
+                  - {label: "Ringhiere e Recinzioni", value: "ringhiere"}
+                  - {label: "Verande e Chiusure", value: "verande"}
+              - {label: "Immagine", name: "file", widget: "image"}
