@@ -9,7 +9,7 @@
 
 backend:
   name: github
-  repo: TUO-UTENTE/TUO-REPO
+  repo: lisadeceglia89/sito-fabbro-de-ceglia-de-pinto
   branch: main
 
 # Dove Decap CMS salva le foto caricate e come il sito le richiama
