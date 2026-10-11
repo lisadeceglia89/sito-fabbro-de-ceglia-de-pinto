@@ -1,8 +1,26 @@
+# Netlify prepara la cartella "pubblica": copia il sito e ottimizza le foto
+# (vedi scripts/prepara-sito.mjs).
 [build]
-  publish = "public"
-  command = ""
+  command = "npm run build"
+  publish = "pubblica"
 
+[build.environment]
+  NODE_VERSION = "22"
+
+# Il pannello di gestione non deve comparire su Google
 [[headers]]
   for = "/admin/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
+
+# I dati cambiano dal pannello: il browser deve sempre controllare la versione nuova
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

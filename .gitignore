@@ -1,4 +1,2 @@
-node_modules/
-.DS_Store
-npm-debug.log*
-public/img/site/*.bak.jpg
+node_modules
+pubblica
